@@ -1,7 +1,8 @@
 const express = require('express');
 
 const index = require('./routes/Index');
-const page_change = require('./routes/page_change');
+const nav = require('./routes/nav');
+
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -15,16 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
 
 app.use("/", index);
+app.use("/nav", nav);
 
-let current_page ;
-app.post("/page_change", (req, res) => {
-    current_page = req.body.data;
-    res.status(200).send("success");
-});
-
-app.get("/page_change", (req, res) => {
-    res.send(current_page);
-});
 
 app.listen(PORT, () => {
     console.log(`App successfully started on port ${PORT}`);

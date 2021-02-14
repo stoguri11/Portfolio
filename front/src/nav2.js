@@ -13,7 +13,7 @@ $(() => {
 
     $(".dropitem").click((e) => {
         var clickText = $(e.target).text();
-        console.log (clickText);
+
         $('#currentPage').text(() => {
             return clickText;
         });

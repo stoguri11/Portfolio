@@ -7,5 +7,5 @@ This is a portfolio website displaying some of the projects undertaken thorughto
 1. Download and install Node.js (https://nodejs.org/en/download/)
 2. CD to project directory in a terminal window
     * Run command `npm install` to install dependencies
-    * Run command `nodemon` to start server
+    * Run command `npm start` to start server with package `nodemon`
 4. Open browser and navigate to `localhost:8080`

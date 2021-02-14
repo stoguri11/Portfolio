@@ -3,7 +3,8 @@
  }
 
  #welcome {
-     margin-left: 30%;
+    margin-right: 30%;
+    margin-left: 35%;
  }
 
  .navdrop {
@@ -13,13 +14,17 @@
      padding-left: 0;
  }
 
- #navbarDropdown {
+.nav-link {
      color: darkslategray;
+ }
+ 
+ .list-group-item {
+   border: none;
  }
 
 
  #menu-toggle {
-     margin-left: 1%;
+     margin-left: 5px;
      margin-right: 0;
  }
 
