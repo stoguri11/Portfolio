@@ -1,3 +1,21 @@
+body {
+  background-image: url("./img/typewriter-801921.jpg");
+  background-size: cover;
+}
+
+#contentarea {
+  color: white;
+  border: 5px;
+  border-radius: 5px;
+  background-color: darkslategray;
+  margin: 5vh 10vw 5vh 10vw ;
+  max-width: 80vw;
+}
+
+.inner-content {
+  padding: 2vh 5% 5vh 5% ;
+}
+
 #wrapper {
     overflow-x: hidden;
  }

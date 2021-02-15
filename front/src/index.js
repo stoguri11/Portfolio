@@ -22,9 +22,6 @@ $(() => {
 
         let content;
         switch (clickText) {
-            case "Home":
-                content = "./index_content.html";
-                break;
 
             case "Web Foundations":
                 content = "./webf.html";
