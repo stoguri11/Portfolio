@@ -2,9 +2,9 @@
   "name": "uniportfolio",
   "version": "1.0.0",
   "description": "Portfolio of projects done at University and outside of my studies.",
-  "main": "./Server/App.js",
+  "main": "App.js",
   "scripts": {
-    "start": "nodemon",
+    "start": "node App.js",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

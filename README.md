@@ -3,6 +3,8 @@
 ## Description
 This is a portfolio website displaying some of the projects undertaken thorughtout my 4 years studying Computer Science at University of Portsmouth.
 
+### Not optimised for mobile usage yet.
+
 ## Instructions to run website
 1. Download and install Node.js (https://nodejs.org/en/download/)
 2. CD to project directory in a terminal window
