@@ -4,7 +4,8 @@
   "description": "Portfolio of projects done at University and outside of my studies.",
   "main": "./Server/App.js",
   "scripts": {
-    "start": "node server/App.js",
+    "start": "nodemon",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
