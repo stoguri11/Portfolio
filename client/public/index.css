@@ -3,21 +3,23 @@ body {
   background-size: cover;
 }
 
+#content-wrapper {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: 100%;
+}
+
 #contentarea {
   color: white;
   border: 5px;
   border-radius: 5px;
   background-color: darkslategray;
-  margin: 5vh 2vw 5vh 2vw ;
   max-width: 100vw;
-}
-
-#content-wrapper {
-  height: 100%;
+  margin: 0 2vw 0 2vw;
 }
 
 .inner-content {
-  padding: 2vh 5% 5vh 5% ;
+  padding: 2vh 2% 5vh 2% ;
 }
 
 #wrapper {
@@ -26,8 +28,8 @@ body {
  }
 
  #welcome {
-    margin-right: 30%;
-    margin-left: 35%;
+    margin-right: auto;
+    margin-left: auto;
  }
 
  #title-link {
@@ -87,6 +89,7 @@ body {
 
 #sidebar-img {
     max-width: 100px;
+    margin-left: 9%;
 }
 
 .img-thumbnail {
@@ -106,11 +109,6 @@ body {
     min-width: 0;
     width: 100%;
   }
-
-  #contentarea {
-    margin: 5vh 15vw 5vh 15vw;
-  }
-
 
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;

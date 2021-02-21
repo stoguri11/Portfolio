@@ -8,15 +8,37 @@
 
     <title>Sam Toguri</title>
 
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="fyp.css">
 
 </head>
 
 <body>
-
-    <h1>Masters Project</h1>
-    <p>This is my masters project</p>
-
+    <h2>Sentiment Analysis of Twitter Data in The Web</h2>
+    <div class="grid-container">
+        <div id="text">
+            <p>
+                For my bachelors degree project I developed a sentiment analysis model that could be deployed on a web server
+                and allow users to upload .CSV files and get sentiment analysis results on twitter data from the website.
+            </p>
+            <p>
+                I employed the use of several innovative methods to achieve this. Firstly, I used GloVe word embeddings because it is an 
+                algorithm very good at assigning similar words, vectors that are near eachother in a euclidean space. This, famously, allows you to
+                code things like 'Queen - Woman + Man = King'. 
+            </p>
+            <p>
+                Secondly, I developed a bespoke LSTM recurrent neural network using Tensorflow and Keras to make predictions on one of the 3 sentiment 
+                classes: Positive, Neutral, Negative. LSTM was used becuase it is a recurrent neural network, meaning it processes sequential data very well.
+                The prime reason was that it can remember long term dependencies in text to a very high standard. Meaning that more information 
+                is considered in the prediction of the class.  
+            </p>
+            <p>
+                Finally, the trained, tensorflow, LSTM model was packaged and deployed into a Node.js application where users could uplaod CSV files to the website and recieve predictions on their data in minutes. 
+            </p>
+        </div>
+        <div id="img">
+            <img src="./img/GloVe.jfif" alt="GloVe embeddings" id="glove">
+        </div>
+    </div>
 </body>
 
 </html>

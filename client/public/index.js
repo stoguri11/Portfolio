@@ -21,7 +21,7 @@ $(() => {
         var clickText = $(e.target).text();
         console.log(clickText);
 
-        $("#currentPage").text(() => {
+        $("#welcomeText").text(() => {
             return clickText;
         });
 
