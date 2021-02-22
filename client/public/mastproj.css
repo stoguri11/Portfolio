@@ -22,3 +22,20 @@
     max-width: 100%;
     margin: auto;
 }
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-gap: 0;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        grid-template-areas: 
+            "child1"
+            "child2";
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-rows: 53% 47%;
+    }
+}

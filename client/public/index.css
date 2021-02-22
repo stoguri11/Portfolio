@@ -88,7 +88,8 @@ body {
 }
 
 #sidebar-img {
-    max-width: 100px;
+    max-width: 100%;
+    height: auto;
     margin-left: 9%;
 }
 

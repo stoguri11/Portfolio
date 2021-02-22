@@ -50,7 +50,7 @@ $(() => {
             content = "dsalg.html";
         } else if (clickText == "Maths and Functional Programming") {
             content = "mafp.html";
-        } else if (clickText =="Operating Systems and Networking") {
+        } else if (clickText == "Operating Systems and Networking") {
             content = "osan.html";
         } else if (clickText == "Advanced Programming Concepts") {
             content = "adproc.html";
@@ -66,9 +66,8 @@ $(() => {
 
         console.log(content);
 
-            $.get(content, async (html) => {
-                $("#contentarea").load(content);
-            });
+        $("#contentarea").load(content);
+
     });
 
 });
