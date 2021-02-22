@@ -36,7 +36,7 @@ $(() => {
             content = "comvi.html";
         } else if (clickText == "Scientific Computing and Simulation") {
             content = "scas.html"
-        } else if (clickText == "Final Year Project") {
+        } else if (clickText == "Bachelors Project") {
             content = "fyp.html";
         } else if (clickText == "Theoretical Computer Science") {
             content = "theocs.html";
