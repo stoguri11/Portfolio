@@ -3,14 +3,27 @@
     max-width: 100%;
 }
 
+#cap {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+
 #text {
     grid-area: child1;
 }
 
-#img {
+.child1 {
+    grid-area: "child1";
+}
+
+.child2 {
     grid-area: child2;
-    float: right;
-    margin-left: 0;
+    text-align: center;
+}
+
+#img {
+    display: inline-block
 }
 
 .grid-container {

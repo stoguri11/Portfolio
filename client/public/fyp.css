@@ -7,9 +7,17 @@
     grid-area: child1;
 }
 
-#img {
+.child1 {
+    grid-area: "child1";
+}
+
+.child2 {
     grid-area: child2;
-    float: right;
+    text-align: center;
+}
+
+#img {
+    display: inline-block
 }
 
 .grid-container {
