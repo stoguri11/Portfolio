@@ -10,4 +10,9 @@ $(() => {
         return false;
     })
 
+    $('#adta').on('click', (e) => {
+        window.open('./reports/adta.pdf');
+        return false;
+    })
+
 })
