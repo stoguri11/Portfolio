@@ -1,29 +1,10 @@
-#mpi {
-    height: auto;
-    max-width: 100%;
-}
-
-#cap {
-    font-style: italic;
-    font-size: small;
-    text-align: center;
-}
-
-#text {
-    grid-area: child1;
-}
-
 .child1 {
     grid-area: "child1";
 }
 
 .child2 {
-    grid-area: child2;
+    grid-area: "child2";
     text-align: center;
-}
-
-#img {
-    display: inline-block
 }
 
 .grid-container {
@@ -35,13 +16,31 @@
     grid-template-areas: "child1 child2"
 }
 
+.fig {
+    display: inline-block
+}
+
+.img {
+    height: auto;
+    max-width: 85%;
+}
+
+.cap {
+    font-size: small;
+    font-style: italic;
+}
+
 @media (max-width: 768px) {
     .grid-container {
         grid-gap: 0;
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
-        grid-template-areas: 
-            "child1"
-            "child2";
+        grid-template-areas: "child1" "child2";
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-rows: 53% 47%;
     }
 }

@@ -1,41 +1,4 @@
-#glove {
+.img {
     height: auto;
-    max-width: 100%;
-}
-
-#text {
-    grid-area: child1;
-}
-
-.child1 {
-    grid-area: "child1";
-}
-
-.child2 {
-    grid-area: child2;
-    text-align: center;
-}
-
-#img {
-    display: inline-block
-}
-
-.grid-container {
-    margin-top: 3vh;
-    display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
-    gap: 2%;
-    justify-content: center;
-    grid-template-areas: "child1 child2"
-}
-
-@media (max-width: 768px) {
-    .grid-container {
-        grid-gap: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-            "child1"
-            "child2";
-    }
+    max-width: 90%;
 }

@@ -8,6 +8,39 @@ body {
     overflow-x: hidden;
 }
 
+.inner-content {
+    padding: 2vh 2% 5vh 2%;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+.topbar {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+}
+
+#menu-toggle {
+    color: black;
+    margin: 1vh 1vw;
+    float: left;
+    font-size: x-large;
+}
+
+#menu-icon {
+    height: auto;
+    max-width: 100%;
+}
+
+#welcomeText {
+    color: black;
+    margin-right: 10vw;
+    margin-top: 1vh;
+    font-size: xxx-large;
+}
+
 #content-wrapper {
     display: inline-block;
     height: 100%;
@@ -17,38 +50,11 @@ body {
 #contentarea {
     display: table;
     color: white;
-    margin: 8vh auto;
+    margin: 20vh auto;
     border: 5px;
     border-radius: 5px;
     background-color: darkslategray;
     max-width: 75%;
-}
-
-.inner-content {
-    padding: 2vh 2% 5vh 2%;
-}
-
-#wrapper {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.topbar {
-    display: inline-block;
-    margin-top: 1vh;
-    width: 100vw;
-    text-align: center;
-}
-
-#welcomeText {
-    color: black;
-    margin-right: 10vw;
-    font-size: xx-large;
-}
-
-#title-link {
-    text-decoration: none;
-    color: inherit;
 }
 
 .navdrop {
@@ -59,20 +65,16 @@ body {
 }
 
 .nav-link {
-    color: darkslategray;
+    color: black;
+    font-size: large;
 }
 
 .list-group-item {
     border: none;
 }
 
-#menu-toggle {
-    margin: 1vh 1vw;
-    float: left;
-    background-color: darkslategrey;
-}
-
 #sidebar-wrapper {
+    background-color: darkslategray;
     min-height: 100vh;
     margin-left: -15rem;
     -webkit-transition: margin .25s ease-out;
@@ -103,6 +105,7 @@ body {
 }
 
 #sidebar-img {
+    background: transparent;
     max-width: 100%;
     height: auto;
     margin-left: 9%;

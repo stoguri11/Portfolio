@@ -8,6 +8,7 @@
 
     <title>Sam Toguri</title>
 
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="fyp.css">
 
     <script src="report_links.js" type="text/javascript"></script>
@@ -19,31 +20,31 @@
     <div class="grid-container">
         <div class="child1" id="text">
             <p>
-                For my bachelors degree project I developed a sentiment analysis model that could be deployed on a web server
-                and allow users to upload .CSV files and get sentiment analysis results on twitter data from the website.
+                For my bachelors degree project I developed a sentiment analysis model that could be deployed on a web server and allow users to upload .CSV files and get sentiment analysis results on twitter data from the website.
             </p>
             <p>
-                I employed the use of several innovative methods to achieve this. Firstly, I used GloVe word embeddings because it is an 
-                algorithm very good at assigning similar words, vectors that are near eachother in a euclidean space. This, famously, allows you to
-                code things like 'Queen - Woman + Man = King'. 
+                I employed the use of several innovative methods to achieve this. Firstly, I used GloVe word embeddings because it is an algorithm very good at assigning similar words, vectors that are near eachother in a euclidean space. This, famously, allows you to
+                code things like 'Queen - Woman + Man = King'.
             </p>
             <p>
-                Secondly, I developed a bespoke LSTM recurrent neural network using Tensorflow and Keras to make predictions on one of the 3 sentiment 
-                classes: Positive, Neutral, Negative. LSTM was used becuase it is a recurrent neural network, meaning it processes sequential data very well.
-                The prime reason was that it can remember long term dependencies in text to a very high standard. Meaning that more information 
-                is considered in the prediction of the class.  
+                Secondly, I developed a bespoke LSTM recurrent neural network using Tensorflow and Keras to make predictions on one of the 3 sentiment classes: Positive, Neutral, Negative. LSTM was used becuase it is a recurrent neural network, meaning it processes sequential
+                data very well. The prime reason was that it can remember long term dependencies in text to a very high standard. Meaning that more information is considered in the prediction of the class.
             </p>
             <p>
-                Finally, the trained, tensorflow, LSTM model was packaged and deployed into a Node.js application where users could upload CSV files to the website and receive predictions on their data in minutes. 
+                Finally, the trained, tensorflow, LSTM model was packaged and deployed into a Node.js application where users could upload CSV files to the website and receive predictions on their data in minutes.
             </p>
             <p id="diss">
                 Please follow this <a href="#">link</a> if you would like to view my full dissertation on the subject.
             </p>
         </div>
         <div class="child2">
-            <figure id="img">
-                <img src="./img/GloVe.jfif" alt="GloVe embeddings" id="glove">
-                <figcaption id="cap">GloVe word vectors and their proximity to eachother</figcaption>
+            <figure class="fig">
+                <img src="./img/recurrent-neural-networks.png" alt="RNN Architecture" class="img">
+                <figcaption class="cap">Recurrent neural net architecture</figcaption>
+            </figure>
+            <figure class="fig">
+                <img src="./img/GloVe.jfif" alt="GloVe embeddings" class="img">
+                <figcaption class="cap">GloVe word vectors and their proximity to eachother</figcaption>
             </figure>
         </div>
     </div>
