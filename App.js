@@ -18,6 +18,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
 
 
+// Serve index page
+app.get('/', (req, res) => {
+    res.sendFile('./client/public/index.html');
+});
+
 
 app.listen(PORT, () => {
     console.log(`App successfully started on port ${PORT}`);
