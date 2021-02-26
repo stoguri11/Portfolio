@@ -23,11 +23,16 @@
 .img {
     height: auto;
     max-width: 85%;
+    border-radius: 5px;
 }
 
 .cap {
     font-size: small;
     font-style: italic;
+}
+
+#edge {
+    background-color: aliceblue;
 }
 
 @media (max-width: 768px) {

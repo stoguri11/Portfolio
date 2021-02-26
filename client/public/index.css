@@ -50,11 +50,23 @@ body {
 #contentarea {
     display: table;
     color: white;
-    margin: 20vh auto;
+    margin: 15vh auto;
     border: 5px;
     border-radius: 5px;
     background-color: darkslategray;
     max-width: 75%;
+}
+
+#me {
+    display: inline-block;
+    max-height: 20%;
+    max-width: 20%;
+    border-radius: 5px;
+}
+
+.meimg {
+    width: 100%;
+    text-align: center;
 }
 
 .navdrop {
