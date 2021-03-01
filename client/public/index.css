@@ -1,8 +1,8 @@
 body {
-    background: linear-gradient(-45deg, #0e6cc4, #00C9E8, #E8F779, #00C9E8, #0e6cc4);
+    background: linear-gradient(-45deg, #0e6cc4, #00C9E8, #E8F779, #00C9E8, #0e6cc4) no-repeat;
     background-color: #00C9E8;
-    background-size: 500%;
-    animation: gradient 15s ease infinite;
+    background-size: 1000%;
+    animation: gradient 20s ease infinite;
     margin: 0;
     padding: 0;
 }
@@ -61,15 +61,8 @@ body {
 .p-nested-dropdowns ul ul {
     left: 100%;
     position: absolute;
-    left: 0px;
-}
-
-#my {
-    top: 14.5vh;
-}
-
-#y3 {
-    top: 9.8vh;
+    top: 0px;
+    left: -160px;
 }
 
 
@@ -118,14 +111,13 @@ body {
 
 #content-wrapper {
     display: inline-block;
-    height: 100%;
     border: none;
 }
 
 #contentarea {
     display: table;
     color: white;
-    margin: 15vh auto;
+    margin: 15vh 5vw 0 5vw;
     border: 5px;
     border-radius: 5px;
     background-color: darkslategray;
@@ -271,6 +263,9 @@ body {
     }
     .p-nested-dropdowns {
         display: none;
+    }
+    #contentarea {
+        margin: 10vh auto;
     }
 }
 
