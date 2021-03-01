@@ -8,15 +8,84 @@ body {
     overflow-x: hidden;
 }
 
+.mobile-nav-wrapper {
+    position: fixed;
+    width: 100vw;
+}
+
+.mobile-nav-wrapper>.list-group {
+    flex-direction: row;
+}
+
+.p-nested-dropdowns {
+    color: aliceblue;
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    /* Reset list styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.p-nested-dropdowns li {
+    /* Spacing */
+    padding: 8px;
+    /* Used to position the sub dropdown */
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/* The sub dropdown */
+
+.p-nested-dropdowns ul {
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* Hidden by default */
+    display: none;
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* Width */
+    width: 200px;
+}
+
+
+/* The second level sub dropdown */
+
+.p-nested-dropdowns ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Change background color of list item when being hovered */
+
+.p-nested-dropdowns li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Show the direct sub dropdown when hovering the list item */
+
+.p-nested-dropdowns li:hover>ul {
+    display: block;
+}
+
 .inner-content {
     padding: 2vh 2% 5vh 2%;
 }
 
-#wrapper {
-    overflow-x: hidden;
-}
-
 .topbar {
+    display: none;
     position: fixed;
     width: 100vw;
     text-align: center;
@@ -30,6 +99,7 @@ body {
 }
 
 #menu-icon {
+    display: none;
     height: auto;
     max-width: 80%;
 }
@@ -59,8 +129,8 @@ body {
 
 #me {
     display: inline-block;
-    max-height: 20%;
-    max-width: 20%;
+    max-height: 35%;
+    max-width: 35%;
     border-radius: 5px;
 }
 
@@ -85,7 +155,38 @@ body {
     border: none;
 }
 
+.home-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dropitem {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dropitem:link .home-link:link {
+    text-decoration: none;
+}
+
+.dropitem:after .home-link:after {
+    text-decoration: none;
+}
+
+.dropitem:hover .home-link:hover {
+    text-decoration: none;
+}
+
+.dropitem:active .home-link:active {
+    text-decoration: none;
+}
+
+.dropitem:visited .home-link:visited {
+    text-decoration: none;
+}
+
 #sidebar-wrapper {
+    display: none;
     background-color: darkslategray;
     min-height: 100vh;
     margin-left: -15rem;
@@ -129,6 +230,7 @@ body {
 
 @media (min-width: 768px) {
     #sidebar-wrapper {
+        display: inline-block;
         margin-left: 0;
     }
     #sidebar-img {
@@ -148,8 +250,19 @@ body {
         font-size: xxx-large;
     }
     #menu-icon {
+        display: inline;
         height: auto;
         max-width: 100%;
+    }
+    #me {
+        max-height: 20%;
+        max-width: 20%;
+    }
+    .topbar {
+        display: inline-block;
+    }
+    .p-nested-dropdowns {
+        display: none;
     }
 }
 
