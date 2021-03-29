@@ -31,7 +31,8 @@ const useStyles = makeStyles({
         height: 250
     },
     text: {
-        height: 10
+        height: 10,
+        textDecoration: "none"
     },
     button: {
         padding: 0,
