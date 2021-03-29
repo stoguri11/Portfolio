@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node App.js",
     "dev": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd frontend && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "10.19.0"
   }
 }

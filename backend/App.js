@@ -5,8 +5,8 @@ const morgan = require('morgan');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Directories to serve static files from
-app.use(express.static(path.join(__dirname, "/client/public")));
+// Have Node serve the files for our built React app
+app.use(express.static(path.resolve(__dirname, '../frontend/build')));
 
 // access logging
 app.use(morgan('combined'));
@@ -16,12 +16,6 @@ app.use(express.json());
   
 // For parsing application/x-www-form-urlencoded 
 app.use(express.urlencoded({ extended: true })); 
-
-
-// Serve index page
-app.get('/', (req, res) => {
-    res.sendFile('./client/public/index.html');
-});
 
 
 app.listen(PORT, () => {
