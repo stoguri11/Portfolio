@@ -39,11 +39,11 @@ export default function Year3() {
     return (
         <Box className={classes.root}>
             <ButtonGroup className={classes.group} variant="contained" aria-label="contained primary button group">
-                <Link className={classes.link} to="/projects/year4/grip"><Button className={classes.button}>Bachelors Project</Button></Link>
-                <Link className={classes.link} to="/projects/year4/adta"><Button className={classes.button}>Enterprise Web Architectures</Button></Link>
-                <Link className={classes.link} to="/projects/year4/scicom"><Button className={classes.button}>Distributed Systems and Security</Button></Link>
-                <Link className={classes.link} to="/projects/year4/pp"><Button className={classes.button}>Robotics</Button></Link>
-                <Link className={classes.link} to="/projects/year4/comvi"><Button className={classes.button}>Theoretical Computer Science</Button></Link>
+                <Link className={classes.link} to="/projects/year3/proj"><Button className={classes.button}>Bachelors Project</Button></Link>
+                <Link className={classes.link} to="/projects/year3/entwa"><Button className={classes.button}>Enterprise Web Architectures</Button></Link>
+                <Link className={classes.link} to="/projects/year3/dsas"><Button className={classes.button}>Distributed Systems and Security</Button></Link>
+                <Link className={classes.link} to="/projects/year3/robotics"><Button className={classes.button}>Robotics</Button></Link>
+                <Link className={classes.link} to="/projects/year3/theocs"><Button className={classes.button}>Theoretical Computer Science</Button></Link>
             </ButtonGroup>
             <Switch>
                 <Route path="/projects/year3" component={SelectUnit} exact />
