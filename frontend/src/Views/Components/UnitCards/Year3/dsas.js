@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, makeStyles, Box } from "@material-ui/core";
+import dsas from '../../../../Assets/reports/dsas.pdf';
 
 const useStyles = makeStyles({
     root: {
@@ -24,7 +25,7 @@ export default function Robotics() {
                 OMNET++ netowrk simulator and the C++ language to create a rudmentary simulation of a device talking to an EDGE server. I timed all interactions and used a variety of different computation offloading strategies and compared the results.
             </Typography>
             <Typography className={classes.para} variant="h5" component="p">
-                The full report can be found <a href="#" id="dsas">here.</a>
+                The full report can be found <a href={dsas} target="_blank" rel="noreferrer">here</a>
             </Typography>
         </Box>
     )

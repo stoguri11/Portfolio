@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, makeStyles, Box } from "@material-ui/core";
+import adta from '../../../../Assets/reports/adta.pdf';
 
 const useStyles = makeStyles({
     root: {
@@ -33,7 +34,7 @@ export default function Adta() {
                 LSTM RNN like in my Bachelors Project. I did this because LSTMs are proven to perform exceptionally well with temporal data such as text.
             </Typography>
             <Typography className={classes.para} variant="h5" component="p">
-                The full report can be read <a href="#" target="_blank">Here</a>.
+                The full report can be read <a href={adta} target="_blank" rel="noreferrer">here</a>
             </Typography>
         </Box>
     )

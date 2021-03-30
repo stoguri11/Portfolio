@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, makeStyles, Box } from "@material-ui/core";
+import fyp from '../../../../Assets/reports/FYP.pdf';
 
 const useStyles = makeStyles({
     root: {
@@ -8,10 +9,15 @@ const useStyles = makeStyles({
     para: {
         display: "block",
         margin: "1.5vw"
+    },
+    link: {
+        padding: 0,
+        margin: 0,
+        color: "blue"
     }
 });
 
-export default function Robotics() {
+export default function Proj() {
 
     const classes = useStyles();
     return (
@@ -31,7 +37,7 @@ export default function Robotics() {
                 Finally, the trained, tensorflow, LSTM model was packaged and deployed into a Node.js application where users could upload CSV files to the website and receive predictions on their data in minutes.
             </Typography>
             <Typography className={classes.para} variant="h5" component="p" id="diss">
-                Please follow this <a href="#">link</a> if you would like to view my full dissertation on the subject.
+                Please follow this <a href={fyp} target="_blank" rel="noreferrer">Link</a> if you would like to view my full dissertation on the subject.
             </Typography>
         </Box>
     )

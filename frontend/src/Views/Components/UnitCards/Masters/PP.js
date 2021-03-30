@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, makeStyles, Typography } from '@material-ui/core';
+import pp from '../../../../Assets/reports/pp.pdf';
 
 
 const useStyles = makeStyles({
@@ -26,7 +27,7 @@ export default function PP() {
                 less than a million. Upwards of 1 million and the speedup will continue to grow.
             </Typography>
             <Typography className={classes.text} variant="h5" component="p">
-                The full report, which documents all of the lab work that was conducted thorugh out the unit as well, can be found at this <a href="#" id="pp">link</a>.
+                The full report, which documents all of the lab work that was conducted thorugh out the unit as well, can be found at this <a href={pp} target="_blank" rel="noreferrer">Link</a>.
             </Typography>
         </Box>
     )
