@@ -11,20 +11,19 @@ function Welcome() {
 
     const useStyles = makeStyles({
         wrapper : {
-            textAlign: "center"
+            display: "flex",
+            direction: "row",
+            justifyContent: "center"
         },
         textbox: {
-            display: "inline-block",
             marginLeft: "5vw",
             marginRight: "5vw",
             maxWidth: "50vw",
-            textAlign: "left"
+            textAlign: "left",
+            padding: "1vw"
         },
         text: {
-
-        },
-        paper: {
-            display: "inline-block"
+            padding: "0.5vw"
         },
         img: {
             maxWidth: "auto",
@@ -37,7 +36,7 @@ function Welcome() {
     const classes = useStyles();
     return (
         <Box className={classes.wrapper}>
-            <Box className={classes.textbox}>
+            <Paper elevation={5} className={classes.textbox}>
                 <Typography className={classes.text}>
                     I created this website to give potential future employers a more fun and interactive way to get to know me as well as show off some of my technical abilities. It catalogues my time at University and allows you to get a much better understanding of what
                     I learnt and what I am capable of. Please take the time to look through the projects I have developed as I am sure there will be something of interest to you.
@@ -50,8 +49,8 @@ function Welcome() {
                 <Typography className={classes.text}>
                     If you have any questions and would like to get in touch feel free to contact me on any of the methods displayed at the bottom of the <a href='index.html' className="dropitem">About me</a> page.
                 </Typography>
-            </Box>
-            <Paper className={classes.paper}>
+            </Paper>
+            <Paper elevation={5} className={classes.paper}>
                 <img className={classes.img} src={me} alt="Sam Toguri"/>
             </Paper>
         </Box>

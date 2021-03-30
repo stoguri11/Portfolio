@@ -15,7 +15,7 @@ export default function SelectUnit() {
     const classes = useStyles();
     return (
         <Box className={classes.root}>
-            <Typography className={classes.text} variant="h2" component="h1">Please Select a unit above</Typography>
+            <Typography className={classes.text} variant="h2" component="h1">Please select a unit from above</Typography>
         </Box>
     )
 }

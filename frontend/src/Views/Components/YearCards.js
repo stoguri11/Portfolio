@@ -8,7 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import { Box } from '@material-ui/core';
+import { Box, CardHeader, IconButton } from '@material-ui/core';
 // Images
 import NavigateNext from '@material-ui/icons/NavigateNext';
 import begin from '../../Assets/img/beginner.png'
@@ -17,28 +17,28 @@ import advanced from '../../Assets/img/Advanced.webp'
 import masters from '../../Assets/img/masters.png'
 
 const useStyles = makeStyles({
-    wrapper: {
+    root: {
         marginTop: 0,
-        marginBottom: 30,
+        marginBottom: "1vh",
         display: 'flex',
         flexDirection: 'row'
     },
-    root: {
-        width: "25vw",
-        margin: "1vw"
+    header: {
+        fontSize: 50
     },
     media: {
         height: 250
-    },
-    text: {
-        height: 10,
-        textDecoration: "none"
     },
     button: {
         padding: 0,
         marginBottom: 0,
         marginTop: 0,
         float: 'right'
+    },
+    link: {
+        width: "25%",
+        margin: "1vw",
+        textDecoration: "none"
     }
 });
 
@@ -46,79 +46,80 @@ export default function YearCards() {
     const classes = useStyles();
 
     return (
-        <Box className={classes.wrapper}>
-            <Link to="/projects/year4/">
-                <Card className={classes.root} variant="outlined">
+        <Box className={classes.root}>
+            <Link className={classes.link} to="/projects/year4/">
+                <Card className={classes.card} variant="outlined">
                     <CardActionArea>
+                        <CardHeader
+                            className={classes.header}
+                            title="Masters Year"
+                        />
                         <CardMedia
                             className={classes.media}
                             image={advanced}
                             title="Contemplative Reptile"
                         />
-                        <CardContent className={classes.text}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                Masters Year
-                        </Typography>
-                        </CardContent>
                         <CardActions>
-                            <NavigateNext />
+                            <IconButton aria-label="Navigate to Masters Projects">
+                                <NavigateNext />
+                            </IconButton>
                         </CardActions>
                     </CardActionArea>
                 </Card>
             </Link>
-            <Link to="/projects/year3/">
+            <Link className={classes.link} to="/projects/year3/">
                 <Card className={classes.root} variant="outlined">
                     <CardActionArea>
+                        <CardHeader
+                            title="Year 3"
+                        />
                         <CardMedia
                             className={classes.media}
                             image={masters}
                             title="Contemplative Reptile"
                         />
-                        <CardContent className={classes.text}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                Year 3
-                        </Typography>
-                        </CardContent>
                         <CardActions>
-                            <NavigateNext />
+                            <IconButton aria-label="Navigate to Year 3 Projects">
+                                <NavigateNext />
+                            </IconButton>
                         </CardActions>
                     </CardActionArea>
                 </Card>
             </Link>
-            <Link to="/projects/year2/">
+            <Link className={classes.link} to="/projects/year2/">
                 <Card className={classes.root} variant="outlined">
                     <CardActionArea>
+                        <CardHeader
+                            title="Year 2"
+                        />
                         <CardMedia
                             className={classes.media}
                             image={inter}
                             title="Contemplative Reptile"
                         />
-                        <CardContent className={classes.text}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                Year 2
-                        </Typography>
-                        </CardContent>
                         <CardActions>
-                            <NavigateNext />
+                            <IconButton aria-label="Navigate to Year 2 Projects">
+                                <NavigateNext />
+                            </IconButton>
                         </CardActions>
                     </CardActionArea>
                 </Card>
             </Link>
-            <Link to="/projects/year1">
+            <Link className={classes.link} to="/projects/year1">
                 <Card className={classes.root} variant="outlined">
                     <CardActionArea>
+                        <CardHeader
+                            title="Year 1"
+                        />
                         <CardMedia
                             className={classes.media}
                             image={begin}
                             title="Year 1"
                         />
-                        <CardContent className={classes.text}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                Year 1
-                        </Typography>
-                        </CardContent>
                         <CardActions>
-                            <NavigateNext />
+                            <IconButton aria-label="Navigate to Year 1 Projects">
+                                <NavigateNext />
+                            </IconButton>
                         </CardActions>
                     </CardActionArea>
                 </Card>
