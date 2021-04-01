@@ -10,8 +10,6 @@ const app = express();
 app.use(cors());
 // access logging
 app.use(morgan('combined'));
-// For parsing application/json 
-app.use(express.json());
 // For parsing application/x-www-form-urlencoded 
 app.use(express.urlencoded({ extended: true }));
 
