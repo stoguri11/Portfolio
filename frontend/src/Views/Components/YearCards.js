@@ -46,7 +46,7 @@ export default function YearCards() {
     return (
         <Box className={classes.root}>
             <Link className={classes.link} to="/projects/year4/">
-                <Card className={classes.card} variant="outlined">
+                <Card className={classes.card} raised={true}>
                     <CardActionArea>
                         <CardHeader
                             className={classes.header}
@@ -55,7 +55,7 @@ export default function YearCards() {
                         <CardMedia
                             className={classes.media}
                             image={advanced}
-                            title="Contemplative Reptile"
+                            title="Masters year"
                         />
                         <CardActions>
                             <IconButton aria-label="Navigate to Masters Projects">
@@ -66,7 +66,7 @@ export default function YearCards() {
                 </Card>
             </Link>
             <Link className={classes.link} to="/projects/year3/">
-                <Card className={classes.root} variant="outlined">
+                <Card className={classes.root} raised={true}>
                     <CardActionArea>
                         <CardHeader
                             title="Year 3"
@@ -74,7 +74,7 @@ export default function YearCards() {
                         <CardMedia
                             className={classes.media}
                             image={masters}
-                            title="Contemplative Reptile"
+                            title="Third Year"
                         />
                         <CardActions>
                             <IconButton aria-label="Navigate to Year 3 Projects">
@@ -85,7 +85,7 @@ export default function YearCards() {
                 </Card>
             </Link>
             <Link className={classes.link} to="/projects/year2/">
-                <Card className={classes.root} variant="outlined">
+                <Card className={classes.root} raised={true}>
                     <CardActionArea>
                         <CardHeader
                             title="Year 2"
@@ -93,7 +93,7 @@ export default function YearCards() {
                         <CardMedia
                             className={classes.media}
                             image={inter}
-                            title="Contemplative Reptile"
+                            title="Second Year"
                         />
                         <CardActions>
                             <IconButton aria-label="Navigate to Year 2 Projects">
@@ -104,7 +104,7 @@ export default function YearCards() {
                 </Card>
             </Link>
             <Link className={classes.link} to="/projects/year1">
-                <Card className={classes.root} variant="outlined">
+                <Card className={classes.root} raised={true}>
                     <CardActionArea>
                         <CardHeader
                             title="Year 1"
@@ -112,7 +112,7 @@ export default function YearCards() {
                         <CardMedia
                             className={classes.media}
                             image={begin}
-                            title="Year 1"
+                            title="First Year"
                         />
                         <CardActions>
                             <IconButton aria-label="Navigate to Year 1 Projects">

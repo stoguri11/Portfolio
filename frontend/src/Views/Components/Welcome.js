@@ -36,7 +36,7 @@ function Welcome() {
     const classes = useStyles();
     return (
         <Box className={classes.wrapper}>
-            <Paper elevation={5} className={classes.textbox}>
+            <Paper elevation={20} className={classes.textbox}>
                 <Typography className={classes.text}>
                     I created this website to give potential future employers a more fun and interactive way to get to know me as well as show off some of my technical abilities. It catalogues my time at University and allows you to get a much better understanding of what
                     I learnt and what I am capable of. Please take the time to look through the projects I have developed as I am sure there will be something of interest to you.
@@ -46,12 +46,9 @@ function Welcome() {
                     continue learning about different technologies and am always looking to improve myself. I believe getting into a graduate scheme will set me up perfectly to learn vast amounts about working in professional development environments
                     as well as give me the best position to launch a career from.
                 </Typography>
-                <Typography className={classes.text}>
-                    If you have any questions and would like to get in touch feel free to contact me on any of the methods displayed at the bottom of the <a href='index.html' className="dropitem">About me</a> page.
-                </Typography>
             </Paper>
-            <Paper elevation={5} className={classes.paper}>
-                <img className={classes.img} src={me} alt="Sam Toguri"/>
+            <Paper elevation={20} className={classes.paper}>
+                <img className={classes.img} src={me} alt="Sam Toguri" aria-label="Sam Toguri"/>
             </Paper>
         </Box>
     );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Typography, AppBar, makeStyles } from '@material-ui/core';
 import '../../Assets/css/Topbar.css'
 
@@ -9,6 +10,10 @@ Application top bar
 const useStyles = makeStyles({
     top: {
         backgroundColor: "darkslategrey"
+    },
+    link: {
+        textDecoration: "none",
+        color: "inherit"
     }
 });
 
@@ -24,7 +29,7 @@ export default function Topbar(props) {
     const classes = useStyles();
     return (
         <AppBar className={classes.top} position="static">
-            <Typography className={classes.text} variant='h1' align='center'>{text}</Typography>
+            <Link className={classes.link} to="/"><Typography className={classes.text} variant='h1' align='center'>{text}</Typography></Link>
         </AppBar>          
     );
 }
